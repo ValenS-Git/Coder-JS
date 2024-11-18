@@ -87,7 +87,7 @@ body{
         font-size: 10px !important;
     }
     .cart-games ion-icon{
-        font-size: 16px;
+        font-size: 12px;
     }
     .contenedor-carrito .btn-close{
         margin-left: 79% !important;
@@ -128,7 +128,7 @@ img {
 
 .cart-shop{
     background: linear-gradient(to bottom, #1a1a1a,#2a2a2a);
-    width: 70%;
+    width: 80%;
     border-radius: 3px;
     max-height: 80vh;
     color: #fff;
@@ -184,10 +184,104 @@ img {
     font-size: 20px;
     border-top: 2px solid #ddda;
     width: 100%;
-    text-transform: uppercase;
+}
+.total-buy p{
+    padding-top: 10px;
 }
 .delete-product{
     cursor: pointer;
     font-size: 20px;
     color: rgb(253, 60, 60);
+}
+.info{
+    border-radius: 5px;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    color: #ddd;
+    font-weight: 500;
+    box-shadow: 0 0 10px 2px #2c2c2c;
+}
+
+/* ESTILOS DEL FOOTER*/
+footer {
+    background: linear-gradient(to top, #1a1a1a, #2a2a2a);
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 50px 100px;
+    margin-top: 50px;
+}
+footer .content-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+footer .content-footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+footer .content-footer p {
+    color: #ddd;
+}
+footer .content-footer .icons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: 1fr;
+    gap: 2px;
+}
+footer .content-footer .icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+footer .content-footer .icons a ion-icon {
+    color: #41d;
+}
+footer .content-footer .box-ft {
+    position: relative;
+}
+footer .content-footer .box-ft a {
+    color: #ddd;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 0.2s;
+    text-decoration: none !important;
+}
+footer .content-footer .box-ft a:hover {
+    text-decoration: underline !important;
+    color: #2e6db4 !important;
+}
+.copyright-text {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 50px;
+    border-top: 0.1px solid rgba(119, 119, 119, 0.6666666667);
+}
+@media (max-width: 680px){
+    .content-footer{
+        grid-template-rows: repeat(3, 1fr) !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+    .copyright-text{
+        max-height: 100vh !important;
+        font-size: 15px !important;
+        padding-top: 20px !important;
+    }
+    .contact-box{
+        width: 90% !important;
+    }
+    .content-form{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    }
 }
